@@ -8,17 +8,8 @@ jobs:
      steps:
        - checkout
        - run:
-          name: list
-          command: ls
-       - run:
-          name: cd-to-app
-          command: cd app/
-       - run:
-          name: list-again
-          command: ls
-       - run:
           name: npm-install
-          command: npm install
+          command: cd app && npm install
        - run:
           name: npm-start
-          command: npm start
+          command: cd app && npm start
