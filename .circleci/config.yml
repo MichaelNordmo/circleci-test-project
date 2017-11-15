@@ -11,5 +11,5 @@ jobs:
           name: npm-install
           command: cd app && npm install
        - run:
-          name: npm-start
-          command: cd app && npm start
+          name: npm-build
+          command: cd app && npm run build
